@@ -16,5 +16,12 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     currencyKey: process.env.CURRENCY_API_KEY
+  },
+  target: 'static',
+  router: {
+    base: '/nuxt-dojo-project/'
+  },
+  generate: {
+    fallback: '404.html'
   }
 })
